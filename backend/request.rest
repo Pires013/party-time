@@ -1,0 +1,9 @@
+POST http://localhost:3030/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "https://www.google.com/imgres?q=iphone&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41Zbbl4P%2BLL._UF1000%2C1000_QL80_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.com.br%2FApple-iPhone-13-128-GB-das-estrelas%2Fdp%2FB09T4YK6QK&docid=VfHr6b1S_ZL_2M&tbnid=SCltVpFTjhs7NM&vet=12ahUKEwixgu3sx86PAxWCIbkGHcD-EEIQM3oECDIQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwixgu3sx86PAxWCIbkGHcD-EEIQM3oECDIQAA"
+}

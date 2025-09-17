@@ -1,0 +1,116 @@
+/* RESET E BASE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    /* Fundo atualizado */
+    background: linear-gradient(135deg, #f0f2f5, #dfe7fd);
+    color: #283252;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* LISTAS */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* LINKS */
+a {
+    color: #283252;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7703fc;
+}
+
+/* PARÁGRAFOS */
+p {
+    color: #747990;
+    font-size: 1rem;
+}
+
+/* BOTÕES */
+.btn, .btn-secondary {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    border: none;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn {
+    background: linear-gradient(135deg, #7703fc, #a607ff);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(119, 3, 252, 0.3);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(119, 3, 252, 0.35);
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btn-secondary {
+    background-color: #fff;
+    color: #283252;
+    border: 2px solid #cfcfcf;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    border-color: #bfbfbf;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    body {
+        padding: 0.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .btn, .btn-secondary {
+        width: 100%;
+        padding: 0.7rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.9rem;
+    }
+
+    ul {
+        gap: 0.3rem;
+    }
+
+    .btn, .btn-secondary {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+    }
+}

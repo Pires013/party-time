@@ -1,0 +1,179 @@
+/* TITULOS E PARÁGRAFOS */
+.form-page h2,
+.form-page p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-page p {
+    color: #7703fc;
+    font-weight: 500;
+}
+
+/* FORMULÁRIO */
+.form-page form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+}
+
+/* LABELS E CAMPOS */
+.form-page label {
+    color: #747990;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.form-page input,
+.form-page textarea {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-page input:focus,
+.form-page textarea:focus {
+    outline: none;
+    border-color: #7703fc;
+    box-shadow: 0 0 8px rgba(119, 3, 252, 0.2);
+}
+
+.form-page input::placeholder,
+.form-page textarea::placeholder {
+    color: #a4a7b4;
+}
+
+/* SERVIÇOS */
+.services-container,
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.form-page .service,
+.service-container .service {
+    max-width: 28%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-page .service:hover,
+.service-container .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.form-page .service img,
+.service-container .service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.form-page .service img:hover,
+.service-container .service img:hover {
+    transform: scale(1.05);
+}
+
+.form-page .service p {
+    margin-bottom: 0;
+    color: #747990;
+}
+
+/* CHECKBOX */
+.form-page .checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.form-page .service-name {
+    font-weight: 600;
+}
+
+.form-page .service-price {
+    color: #747990;
+    font-size: 0.9rem;
+}
+
+.form-page .checkbox-container p {
+    color: #747990;
+    font-size: 0.8rem;
+}
+
+/* BOTÃO */
+.form-page .btn {
+    max-width: 150px;
+    margin: 1.5rem auto 0;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #7703fc, #a607ff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.form-page .btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+    box-shadow: 0 6px 14px rgba(119, 3, 252, 0.35);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .form-page .service,
+    .service-container .service {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-page form {
+        padding: 1.5rem;
+    }
+
+    .form-page .service,
+    .service-container .service {
+        max-width: 100%;
+    }
+
+    .form-page .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-page p {
+        font-size: 0.9rem;
+    }
+
+    .form-page .checkbox-container p {
+        font-size: 0.75rem;
+    }
+}

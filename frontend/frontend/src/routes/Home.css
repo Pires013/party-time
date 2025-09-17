@@ -1,0 +1,109 @@
+/* HOME */
+.home {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #283252;
+}
+
+.home p {
+    color: #747990;
+    font-size: 1rem;
+}
+
+.home h1 {
+    margin-bottom: 1.5rem;
+}
+
+/* CONTAINER DE FESTAS */
+.parties-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    justify-content: center;
+}
+
+/* CADA FESTA */
+.parties-container .party {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 380px;
+    flex: 1 1 280px; /* flexível para responsividade */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.parties-container .party:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* IMAGENS DAS FESTAS */
+.parties-container .party img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.parties-container .party img:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÃO SECUNDÁRIO DAS FESTAS */
+.parties-container .btn-secondary {
+    max-width: 120px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #283252;
+    border: 2px solid #cfcfcf;
+}
+
+.parties-container .btn-secondary:hover {
+    background-color: #f0f0f0;
+    border-color: #bfbfbf;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .parties-container .party {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .parties-container {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .parties-container .party {
+        max-width: 100%;
+    }
+
+    .home p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home p {
+        font-size: 0.9rem;
+    }
+
+    .parties-container .btn-secondary {
+        width: 100%;
+        max-width: none;
+    }
+}
